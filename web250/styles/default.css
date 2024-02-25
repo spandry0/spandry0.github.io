@@ -10,11 +10,13 @@ body {
   min-height: 100vh;
 }
 
+
 header {
   background-color: #dfd3c3; 
   color: #3a5252; 
   padding: 20px;
 }
+
 
 nav {
   background-color: #f0ece2;
@@ -27,10 +29,12 @@ nav ul {
   padding: 0;
 }
 
+
 nav li {
   display: inline;
   margin-right: 10px;
 }
+
 
 nav a {
   text-decoration: none;
@@ -40,10 +44,12 @@ nav a {
   border-radius: 5px;
 }
 
+
 main {
   flex: 1;
   padding: 20px;
 }
+
 
 .footer {
   background-color: #dfd3c3; 
@@ -51,30 +57,35 @@ main {
   padding: 10px;
 }
 
-.navlinks {
+
+.nav-links {
   background-color: #dfd3c3;
-  color: #fff;
+  color: #ccc;
   text-align: center;
   padding: 10px;
   text-decoration: none;
 }
 
-a:hover {
+
+.nav-links a:hover {
   color: #f0ece2;
 }
 
-a {
+.nav-links a {
+   color: white;
   text-decoration: none;
-  color: #000000;
 }
+
 
 h2 {
   text-align: center;
 }
+
 p {
   text-align: center;
   line-height: 3em;
 }
+
 .introMain {
   padding: 0 20px 20px 20px;
   text-align: center;
@@ -101,3 +112,5 @@ p {
   justify-content: center;
 
 }
+
+
