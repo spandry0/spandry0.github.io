@@ -7,7 +7,25 @@
             height: 100vh;
             margin: 0;
         }
+const container = document.getElementById("pyramid-container");
+const brickWidth = 50;
+const brickHeight = 30;
+const maxRows = Math.floor(container.offsetHeight / brickHeight);
 
+function generatePyramid(rows) {
+    let bricks = "";
+    for (let row = 1; row <= rows; row++) {
+        const bricksInRow = Math.pow(2, row) - 1;
+        for (let brick = 0; brick < bricksInRow; brick++) {
+            const left = brickWidth * brick + brickWidth / 2;
+            const top = brickHeight * row - brickHeight / 2;
+            bricks += `<div class="brick" style="left: ${left}px; top: ${top}px;"></div>`;
+        }
+    }
+    return bricks;
+}
+
+container.innerHTML = generatePyramid(maxRows);
         #pyramid {
             position: relative;
             width: 200px;
