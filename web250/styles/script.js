@@ -9,6 +9,9 @@ document.addEventListener('DOMContentLoaded', function() {
     brandName.addEventListener('click', function() {
         // Change the brand name color to a random color
         brandName.style.color = getRandomColor();
+
+        // Change the background color to a random color
+        document.body.style.backgroundColor = getRandomColor();
     });
 });
 
@@ -20,5 +23,4 @@ function getRandomColor() {
     }
     return color;
 }
-
 
