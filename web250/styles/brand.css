@@ -86,6 +86,22 @@ p {
   justify-content: center;
 }
 
+header {
+  margin-top: -9.3vh;
+  padding-top: 5vh;
+}
+
+header h1 {
+  background-color: #a8b8cf2b;
+  width: 120%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  margin-bottom: -2vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
 
 header, h2, .designedBy, .validationButtons, footer {
   display: flex;
