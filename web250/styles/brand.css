@@ -86,25 +86,6 @@ p {
   justify-content: center;
 }
 
-
-
-header, h2, .designedBy, .validationButtons, footer {
-  display: flex;
-  justify-content: center;
-}
-
-header h1 {
-  background-color: #dfd3c3;
-  width: 120%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 10vh;
-  margin-bottom: -2vh;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
-}
-
 header ul {
   width: 100%;
   background-color: #a8b8cf46;
@@ -265,11 +246,7 @@ main {
 }
 
 .color4 {
-  background: #edf2fb;
-}
-
-.color5 {
-  background: #d7e3c;
+  background: #efefef;
 }
 
 .colorsBox > div:hover {
