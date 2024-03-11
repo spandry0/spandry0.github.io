@@ -215,7 +215,7 @@ main {
   align-items: center;
 }
 
-.mainP {
+.mainPyramid {
   border:1.25px solid gray;
   border-radius: 0.8%;
   display: flex;
@@ -227,7 +227,12 @@ main {
   height: 70vh;
 }
 
-
+.color, .fontContainer {
+  margin-top: 5vh;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
 .brandP {
   font-size: 24px;
 }
