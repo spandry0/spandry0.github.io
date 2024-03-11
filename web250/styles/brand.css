@@ -86,6 +86,11 @@ p {
   justify-content: center;
 }
 
+
+header, h2, .designedBy, .validationButtons, footer {
+  display: flex;
+  justify-content: center;
+}
 header ul {
   width: 100%;
   background-color: #a8b8cf46;
