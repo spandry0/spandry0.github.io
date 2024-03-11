@@ -223,16 +223,11 @@ main {
   width: 65%;
   padding: 5vh;
   align-items: center;
-  background-color: #ccdbfd;
+  background-color: #665544;
   height: 70vh;
 }
 
-.color, .fontContainer {
-  margin-top: 5vh;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
+
 .brandP {
   font-size: 24px;
 }
