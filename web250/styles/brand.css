@@ -93,13 +93,8 @@ header, h2, .designedBy, .validationButtons, footer {
   justify-content: center;
 }
 
-header {
-  margin-top: -9.3vh;
-  padding-top: 5vh;
-}
-
 header h1 {
-  background-color: #a8b8cf2b;
+  background-color: #dfd3c3;
   width: 120%;
   display: flex;
   justify-content: center;
@@ -222,7 +217,7 @@ main {
   align-items: center;
 }
 
-.mainRectangle {
+.mainPyramid {
   border:1.25px solid gray;
   border-radius: 0.8%;
   display: flex;
@@ -234,7 +229,7 @@ main {
   height: 70vh;
 }
 
-.colorScheme, .fontContainer {
+.color, .fontContainer {
   margin-top: 5vh;
   align-items: center;
   display: flex;
@@ -270,23 +265,23 @@ main {
 }
 
 .color1 {
-  background: #5587fb;
+  background: #0088dd;
 }
 
 .color2 {
-  background: #abc4ff;
+  background: #413f3b;
 }
 
 .color3 {
-  background: #ccdbfd;
+  background: #66cccc;
 }
 
 .color4 {
-  background: #d7e3fc;
+  background: #edf2fb;
 }
 
 .color5 {
-  background: #edf2fb;
+  background: #d7e3c;
 }
 
 .colorsBox > div:hover {
