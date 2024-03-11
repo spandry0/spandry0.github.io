@@ -217,18 +217,6 @@ main {
   align-items: center;
 }
 
-.mainPyramid {
-  border:1.25px solid gray;
-  border-radius: 0.8%;
-  display: flex;
-  flex-direction: column;
-  width: 65%;
-  padding: 5vh;
-  align-items: center;
-  background-color: #ccdbfd;
-  height: 70vh;
-}
-
 .color, .fontContainer {
   margin-top: 5vh;
   align-items: center;
