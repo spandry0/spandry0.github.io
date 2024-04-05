@@ -2,8 +2,9 @@
 <html>
 <head>
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link href="./css/default.css" rel="stylesheet" type="text/css">	
-             <title>Stephane Pandry || WEB250 ||Home</title>
+<link href="./css/default.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+             <title>Stephane Pandry || WEB250 ||Login</title>
 </head>
 <body>
   
@@ -13,27 +14,22 @@
   <nav>
 <ul class="nav-links">
 
-	      <li><a href = "?p=../contents/home.php">Home</a><li> 
+	 <li><a href = "?p=../contents/home.php">Home</a><li> 
          <li><a href = "?p=../contents/introduction.php">Introduction</a><li>
          <li><a href = "?p=../contents/contract.php">Contract</a><li>
          <li><a href = "?p=../contents/brand.php">brand</a><li>
+	 <li><a href = "?p=../contents/login.php">Login</a><li>
       <ul>
 	</nav>
 <main>
 </header>
-<div class="fab">
-<p id="center">
-	<main>
-	<!-- dynamic content goes here -->
-
-<?php
-	$sPage = $_GET["p"];
-	//echo ("You picked the page: " . $sPage); 
-	
-	if($sPage == "") {  $sPage = "home.php"; }
-	include($sPage);
-?>
-</main></p></div>
+<div class="login-container">
+        <h2>Login</h2>
+        <form action="login.php" method="POST">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="submit" value="Login">
+        </form>
 		</main>
     <footer> 
         <div class="nav-links">
@@ -46,7 +42,6 @@
             <a href="https://www.linkedin.com/in/stephane-pandry-3b811a205/">LinkedIn</a>
             </nav>
             <br>
-         <div class="designedBy">
          
          </div>
 </footer>
