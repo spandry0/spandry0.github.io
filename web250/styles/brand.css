@@ -135,10 +135,6 @@ footer {
   align-items: center;
 }
 
-nav ul a {
-  color: black;
-}
-
 a:not(nav ul a, .footerNav > li > a), a:not(nav ul a, .footerNav > li > a) {
   color: #5587fb;
   transition: 0.125s;
