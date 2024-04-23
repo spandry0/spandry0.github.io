@@ -181,15 +181,6 @@ justify-content: space-around;
   margin-left: 1.5vh;
 }
 
-.footerNav > li > a, nav ul a {
-  text-decoration: none;
-  color: black;
-  font-size: 16px;
-  padding: 11px;
-  border-radius: 3%;
-  transition: 0.1s;
-}
-
 .footerNav {
   display: flex;
   justify-content: space-around;
