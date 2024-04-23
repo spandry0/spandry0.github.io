@@ -10,7 +10,7 @@ body {
   min-height: 100vh;
 }
 
-#brandContainer {
+brandContainer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,6 +125,11 @@ p {
 }
 .brandP {
   font-size: 24px;
+}
+footer {
+  margin-top: 7vh;
+  flex-direction: column;
+  align-items: center;
 }
 
 .colorsBox {
