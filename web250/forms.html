@@ -19,8 +19,6 @@
               <li><a href="forms.html">Forms</a></li>
             </ul>
     </nav>
-          <div class="introImage">
-                  <img src="images/Pandry.jpeg" alt="Pandry" width="300" height="400">
 		
           </div>
            <main class="introMain">
@@ -59,24 +57,7 @@
         <input type="submit" value="Submit">
     </form>
 
-    <?php
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        echo "<h2>Form Results:</h2>";
-        echo "Name: " . $_POST['name'] . "<br>";
-        echo "Email: " . $_POST['email'] . "<br>";
-        echo "Phone: " . $_POST['phone'] . "<br>";
-        echo "Date of Birth: " . $_POST['dob'] . "<br>";
-        echo "Registration Number: " . $_POST['register'] . "<br>";
-        echo "Age: " . $_POST['age'] . "<br>";
-        // Not displaying the password or secret key for security reasons
-        if (isset($_POST['terms'])) {
-            echo "Agreed to terms: Yes<br>";
-        } else {
-            echo "Agreed to terms: No<br>";
-        }
-    }
-    ?>
-        </div>
+   </div>
         </main>
     <footer> 
         <div class="nav-links">
