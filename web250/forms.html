@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang = "en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="styles/default.css">
+            <title>Stephane Pandry | WEB250 | Forms</title>
+</head>
+            <body>
+       <header>
+            <h1>Stephane Pandry | Antelope | WEB250</h1>
+       </header>
+    <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="introduction.html">Introduction</a></li>
+                <li><a href="contract.html">Contract</a></li>
+                <li><a href="brand.html">Brand</a></li>
+              <li><a href="forms.html">Forms</a></li>
+            </ul>
+    </nav>
+          <div class="introImage">
+                  <img src="images/Pandry.jpeg" alt="Pandry" width="300" height="400">
+		
+          </div>
+           <main class="introMain">
+              <h2>Forms</h2>
+        <div class="introList">
+           <div class="container">
+
+    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        
+        <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Format: 123-456-7890"><br>
+        
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br>
+        
+        <label for="register">Registration Number:</label><br>
+        <input type="text" id="register" name="register" maxlength="10"><br>
+        
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" min="18" max="100" required><br>
+        
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" minlength="8" required><br>
+        
+        <label for="secret">Secret Key (hidden):</label><br>
+        <input type="hidden" id="secret" name="secret" value="mySecretKey123"><br>
+        
+        <label for="terms">Agree to terms:</label>
+        <input type="checkbox" id="terms" name="terms" required><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        echo "<h2>Form Results:</h2>";
+        echo "Name: " . $_POST['name'] . "<br>";
+        echo "Email: " . $_POST['email'] . "<br>";
+        echo "Phone: " . $_POST['phone'] . "<br>";
+        echo "Date of Birth: " . $_POST['dob'] . "<br>";
+        echo "Registration Number: " . $_POST['register'] . "<br>";
+        echo "Age: " . $_POST['age'] . "<br>";
+        // Not displaying the password or secret key for security reasons
+        if (isset($_POST['terms'])) {
+            echo "Agreed to terms: Yes<br>";
+        } else {
+            echo "Agreed to terms: No<br>";
+        }
+    }
+    ?>
+        </div>
+        </main>
+    <footer> 
+        <div class="nav-links">
+            <nav>
+            <a href="https://github.com/spandry0">GitHub </a>
+            <a href="https://github.com/spandry0/spandry0.github.io">GitHub.io </a>
+            <a href="https://www.freecodecamp.org/learn">freeCodeCamp </a>
+            <a href="https://www.codecademy.com/profiles/Spandry0">Codecademy </a>
+            <a href="https://jsfiddle.net/">JSFiddle </a>
+            <a href="https://www.linkedin.com/in/stephane-pandry-3b811a205/">LinkedIn </a>
+	    <a href="https://github.com/spandry0/web250.io">Web250.oi </a>
+            </nav>
+            <br>
+         <div class="designedBy">
+         
+         </div>
+         <div class="validationButtons">
+            <a href="http://validator.w3.org/check?uri=referer" style = "text-decoration: none">
+		    <img src="images/html_validation_button.gif" alt="Validate HTML" /> 
+                 </a>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer" style = "text-decoration: none">
+		 <img src="images/validation_button_css_rectangle.gif" alt="Validate CSS" />
+		</a> 
+        </div>
+    </footer>
+</body>
+</html>
