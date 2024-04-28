@@ -6,16 +6,9 @@
             <title>Stephane Pandry | WEB250 | Contract</title>
 </head>
             <body>
-       <header>
-            <h1>Stephane Pandry | Antelope | WEB250</h1>
-       </header>
+       
     <nav>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="introduction.html">Introduction</a></li>
-                <li><a href="contract.html">Contract</a></li>
-                <li><a href="brand.html">Brand</a></li>
-		<li><a href="forms.html">Forms</a></li>
             </ul>
     </nav>
           <div class="introImage">
@@ -40,20 +33,12 @@
             </ul>
         </div>
         </main>
-    <footer> 
+    
         <div class="nav-links">
             <nav>
-            <a href="https://github.com/spandry0">GitHub </a>
-            <a href="https://github.com/spandry0/spandry0.github.io">GitHub.io </a>
-            <a href="https://www.freecodecamp.org/learn">freeCodeCamp </a>
-            <a href="https://www.codecademy.com/profiles/Spandry0">Codecademy </a>
-            <a href="https://jsfiddle.net/">JSFiddle </a>
-            <a href="https://www.linkedin.com/in/stephane-pandry-3b811a205/">LinkedIn </a>
-	    <a href="https://github.com/spandry0/web250.io">Web250.oi </a>
             </nav>
             <br>
          <div class="designedBy">
-         
          </div>
          <div class="validationButtons">
         </div>
