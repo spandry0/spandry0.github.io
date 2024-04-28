@@ -8,43 +8,37 @@
         <title>Stephane Pandry | WEB250 | Forms</title>
 </head>
 <body>
-       <main>
-           <main class="introMain">
-              <h2>Forms</h2>
-      
-<div class="container">
+        <main>
+             <h2>Forms</h2>
+        <div class="introList">
+           <div class="container">
+                <!-- Form 1 - POST -->
+                <form class="form1" action='' method="POST">
+                    <h3>POST Form</h3>
+                    <label for="firstName">First name:</label><br>
+                    <input type="text" id="firstName" name="firstName" required><br>
+                    <label for="lastName">Last name:</label><br>
+                    <input type="text" id="lastName" name="lastName" required><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="birthday">Birthday:</label><br>
+                    <input type="date" id="birthday" name="birthday" ><br>
+                    <input id="submitButton" type="submit" value="Submit POST Form">
+                </form>
+                <hr/>
 
-    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required><br>
-        
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br>
-        
-        <label for="phone">Phone:</label><br>
-        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Format: 123-456-7890"><br>
-        
-        <label for="dob">Date of Birth:</label><br>
-        <input type="date" id="dob" name="dob" required><br>
-        
-        <label for="register">Registration Number:</label><br>
-        <input type="text" id="register" name="register" maxlength="10"><br>
-        
-        <label for="age">Age:</label><br>
-        <input type="number" id="age" name="age" min="18" max="100" required><br>
-        
-        <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password" minlength="8" required><br>
-        
-        <label for="secret">Secret Key (hidden):</label><br>
-        <input type="hidden" id="secret" name="secret" value="mySecretKey123"><br>
-        
-        <label for="terms">Agree to terms:</label>
-        <input type="checkbox" id="terms" name="terms" required><br>
-        
-        <input type="submit" value="Submit">
-    </form>
-
+                <?php
+                if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                    if (isset($_POST['firstName'])) {
+                        $firstName = $_POST['firstName'];
+                        $lastName = $_POST['lastName'];
+                        $email = $_POST['email'];
+                        $birthday = $_POST['birthday'];
+                        echo "<h3>POST Form Results:</h3>";
+                        echo "First Name: $firstName <br>";
+                        echo "Last Name: $lastName <br>";
+                        echo "Email: $email <br>";
+                        echo "Birthday: $birthday <br>";
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "<h2>Form Results:</h2>";
@@ -62,15 +56,93 @@
         }
     }
     ?>
-            </ul>
-        </div>
+
+                <!-- Form 2 - GET -->
+                <form class="form2" action='' method="GET">
+                    <h3>GET Form</h3>
+                    <label for="firstName2">First name:</label><br>
+                    <input type="text" id="firstName2" name="firstName2" required><br>
+                    <label for="lastName2">Last name:</label><br>
+                    <input type="text" id="lastName2" name="lastName2" required><br>
+                    <label for="email2">Email:</label><br>
+                    <input type="email" id="email2" name="email2" required><br>
+                    <label for="birthday2">Birthday:</label><br>
+                    <input type="date" id="birthday2" name="birthday2"><br>
+                    <input type='hidden' name='p' id='p' value='forms'/>
+                    <input id="submitButton" type="submit" value="Submit GET Form">
+                </form>
+                <hr/>
+
+                <?php
+                if ($_SERVER["REQUEST_METHOD"] == "GET") {
+                    if (isset($_GET['firstName2'])) {
+                        $firstName = $_GET['firstName2'];
+                        $lastName = $_GET['lastName2'];
+                        $email = $_GET['email2'];
+                        $birthday = $_GET['birthday2'];
+                        echo "<h3>Submission Successful!</h3>";
+                        echo "Thank you for visiting our site $firstName!<br>";
+                        echo "Check your inbox for more information at $email <br>";
+                       }
+                }
+                ?>
+
+                <!-- Form 3 - POST -->
+                <form class="form3" action='' method="POST" enctype="multipart/form-data">
+                    <h3>Everything Form</h3>
+                    <label for="firstName3">First name:</label><br>
+                    <input type="text" id="firstName3" name="firstName3" required><br>
+                    <label for="lastName3">Last name:</label><br>
+                    <input type="text" id="lastName3" name="lastName3" required><br>
+                    <label for="email3">Email:</label><br>
+                    <input type="email3" id="email" name="email3" required><br>
+                    <label for="phoneNumber">Phone Number:</label><br>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="###-###-####" required><br>
+                    <label for="birthday3">Birthday:</label><br>
+                    <input type="date" id="birthday3" name="birthday3"><br>
+                    <label>Gender:</label><br>
+                    <input style="margin-right: 1vh; margin-top: 1vh;" type="radio" id="male" name="gender" value="male">Male</input><br>
+                    <input style="margin-right: 1vh; margin-bottom: 1vh;" type="radio" id="female" name="gender" value="female">Female</input><br>
+                  <input id="submitButton" type="submit" value="Submit Everything Form">
+                </form>
+                  
+                <?php
+                if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                    if (isset($_POST['firstName3'])) {
+                        $firstName = $_POST['firstName3'];
+                        $lastName = $_POST['lastName3'];
+                        $email = $_POST['email3'];
+                        $phoneNumber = $_POST['phoneNumber']; // Added phone number field
+                        $birthday = $_POST['birthday3'];
+                        $gender = isset($_POST['gender']) ? $_POST['gender'] : ''; // Handling gender input
+                        
+                        }
+
+                        if ($gender === 'male') {
+                        $genderOutput = 'Male';
+                        } elseif ($gender === 'female') {
+                            $genderOutput = 'Female';
+                        } else {
+                            $genderOutput = '';
+                        }
+                      
+                        $file = isset($_FILES['file']) ? $_FILES['file'] : null;
+                        $fileName = ($file && $file['error'] === UPLOAD_ERR_OK) ? $file['name'] : 'None';
+                        $languagesOutput = !empty($languages) ? implode(", ", $languages) : "None";
+                        echo "<hr style=\"margin-bottom: 2.5vh;\"/>";
+                        echo "<h2 class=\"everythingH2\">Everything Form Results:</h2>";
+                        echo "First Name: $firstName <br>";
+                        echo "Last Name: $lastName <br>";
+                        echo "Email: $email <br>";
+                        echo "Phone Number: $phoneNumber <br>"; 
+                        echo "Birthday: $birthday <br>";
+                        echo "Gender: $genderOutput <br>";
+                        echo "File: $fileName <br>"; 
+                    }
+                }
+
+                ?>
+            </div>
         </main>
-        <div class="nav-links"> 
-         <div class="designedBy">
-         
-         </div>
-         <div class="validationButtons">
-         </div>
-        </main>
-</body>
+    </body>
 </html>
