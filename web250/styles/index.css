@@ -169,13 +169,6 @@ main {
   max-width: 100%;
 }
 
-.colorScheme{
-  margin-top: 2vh;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
 
 .fontContainer {
   margin-top: 5vh;
