@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="styles/default.css">
         <title>Stephane Pandry's Small penguin | WEB250 Forms</title>
+  <link rel="stylesheet" href="styles/forms.css">
 </head>
 <body>
         <main>
