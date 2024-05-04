@@ -2,7 +2,7 @@
 <html lang = "en">
 <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" type="text/css" href="styles/default.css">
-               <title>Stephane Pandry | WEB250 | Home</title>
+               <title>Stephane Pandry's Small penguin | WEB250 | Home</title>
   	
 </head>
 <body>
@@ -13,7 +13,7 @@
         <div class="introList">
 	    <h2>Home</h2>
         <p>
-            Welcome to my WEB250 website page! <br>You can find all the necessary information about me in the <a href="index.php?p=introduction">Introduction</a>. </P>
+            Welcome to my WEB250 website page! You can find all the necessary information about me in the <a href="index.php?p=introduction">Introduction</a>. </P>
 
     </main>
          </div>
