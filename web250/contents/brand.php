@@ -2,7 +2,7 @@
 <html lang = "en">
 <head><meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Stephane Pandry | WEB250 | Brand</title>
+	<title>Stephane Pandry's Small penguin | WEB250| Brand</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="styles/default.css">
 	<link rel="stylesheet" href="styles/brand.css">
