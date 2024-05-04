@@ -2,13 +2,13 @@
 <html lang = "en">
 <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" type="text/css" href="styles/default.css">
-               <title>Stephane Pandry | WEB250 | Contract</title>
+               <title>Stephane Pandry's Small penguin | WEB250| Contract</title>
   	
 </head>
 <body>
 	<?php include 'components/header.html'; ?>
          <header>
-               <h1>Stephane Pandry | Antelope | WEB250 </h1>
+               <h1>Stephane Pandry's Small penguin | WEB250 |</h1>
          </header>
     <nav>
            <ul class="nav-links">
