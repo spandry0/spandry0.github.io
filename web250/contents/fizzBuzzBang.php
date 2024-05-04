@@ -10,8 +10,7 @@
 <body>
 <main>
       <h2>FizzBuzzBang</h2><br>
-      <div>
-          <main class="introMain">
+      <div main class="introMain">
         <form class="form1" action='' method="POST">
             <label for="name">First name:</label><br>
             <input type="text" id="name" name="name" value="Link" required><br>
