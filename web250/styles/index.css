@@ -153,23 +153,6 @@ main {
   align-items: center;
 }
 
-.mainRectangle {
-  border:1.25px solid gray;
-  border-radius: 0.8%;
-  display: flex;
-  flex-direction: column;
-  width: 120vh;
-  padding: 2vh 5vh;
-  align-items: center;
-  background-color: #ccdbfd;
-  min-height: 70vh;
-}
-
-.mainRectangle p {
-  max-width: 100%;
-}
-
-
 .fontContainer {
   margin-top: 5vh;
   align-items: center;
