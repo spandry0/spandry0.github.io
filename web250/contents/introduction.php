@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang = "en">
-<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" type="text/css" href="styles/default.css">
-      <link rel="stylesheet" href="styles/introduction.css">
-            <title>Stephane Pandry's Small penguin | WEB250</title>
-</head>
-            <body>
-       
+<h1><h1>  Introduction</h1></h1>
     <nav>
             <ul class="nav-links">
             </ul>
@@ -43,5 +34,4 @@
          </div>
          <div class="validationButtons">
         </div>
-</body>
-</html>
+
