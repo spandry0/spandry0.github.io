@@ -1,149 +1,137 @@
 
-<!DOCTYPE html>
-<html lang = "en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="styles/default.css">
-        <title>Stephane Pandry's Small penguin | WEB250 Forms</title>
-  <link rel="stylesheet" href="styles/forms.css">
-</head>
-<body>
-        <main>
-             <h2>Forms</h2>
-        <div class="introList">
-           <div class="container">
-                <!-- Form 1 - POST -->
-                <form class="form1" action='' method="POST">
-                    <h3>POST Form</h3>
-                    <label for="firstName">First name:</label><br>
-                    <input type="text" id="firstName" name="firstName" required><br>
-                    <label for="lastName">Last name:</label><br>
-                    <input type="text" id="lastName" name="lastName" required><br>
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email" required><br>
-                    <label for="birthday">Birthday:</label><br>
-                    <input type="date" id="birthday" name="birthday" ><br>
-                    <input id="submitButton" type="submit" value="Submit POST Form">
-                </form>
-                <hr/>
+<h2> forms</h2>
 
-                <?php
-                if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                    if (isset($_POST['firstName'])) {
-                        $firstName = $_POST['firstName'];
-                        $lastName = $_POST['lastName'];
-                        $email = $_POST['email'];
-                        $birthday = $_POST['birthday'];
-                        echo "<h3>POST Form Results:</h3>";
-                        echo "First Name: $firstName <br>";
-                        echo "Last Name: $lastName <br>";
-                        echo "Email: $email <br>";
-                        echo "Birthday: $birthday <br>";
+<!-- Form with method POST -->
+<form action="" method="post">
+  <h2>Customer Information</h2>
+  <label for="first_name">First Name:</label>
+  <input type="text" name="first_name" id="first_name" required><br>
+
+  <label for="last_name">Last Name:</label>
+  <input type="text" name="last_name" id="last_name" required><br>
+
+  <label for="email">Email:</label>
+  <input type="email" name="email" id="email" required><br>
+
+  <label for="message">Message:</label><br>
+  <textarea name="message" id="message" rows="4" cols="50"></textarea><br>
+
+  <label for="discovery">How did you discover us?</label>
+  <select name="discovery" id="discovery">
+    <option value="search_engine">Search Engine</option>
+    <option value="social_media">Social Media</option>
+    <option value="word_of_mouth">Word of Mouth</option>
+    <option value="advertisement">Advertisement</option>
+    <option value="other">Other</option>
+  </select><br>
+
+  <label for="rating">Rate service (1-5):</label>
+  <input type="number" name="rating" id="rating" min="1" max="5" required><br>
+
+  <input type="submit" value="Submit (POST)">
+</form>
+
+<!-- Form with method GET -->
+<form action="" method="get">
+  <h2>Customer Information </h2>
+  <label for="first_name">First Name:</label>
+  <input type="text" name="first_name" id="first_name" required><br>
+
+  <label for="last_name">Last Name:</label>
+  <input type="text" name="last_name" id="last_name" required><br>
+
+  <label for="email">Email:</label>
+  <input type="email" name="email" id="email" required><br>
+
+  <label for="message">Message:</label><br>
+  <textarea name="message" id="message" rows="4" cols="50"></textarea><br>
+
+  <label for="discovery">How did you discover us?</label>
+  <select name="discovery" id="discovery">
+    <option value="search_engine">Search Engine</option>
+    <option value="social_media">Social Media</option>
+    <option value="word_of_mouth">Word of Mouth</option>
+    <option value="advertisement">Advertisement</option>
+    <option value="other">Other</option>
+  </select><br>
+
+  <input type="submit" value="Submit (GET)">
+  <input type="hidden" name="p" value="../contents/forms.php">
+</form>
+
+<hr/>
+
+<?php
+
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['first_name']) && isset($_POST['last_name']) && isset($_POST['email']) && isset($_POST['message']) && isset($_POST['discovery']) && isset($_POST['rating'])) {
+  // Retrieve and process form data
+  $first_name = $_POST['first_name'];
+  $last_name = $_POST['last_name'];
+  $email = $_POST['email'];
+  $message = $_POST['message'];
+  $discovery = $_POST['discovery'];
+  $rating = $_POST['rating'];
+
+  // Display processed data
+  echo "<h3>POST Method Results</h3>";
+  echo "<p>First Name: $first_name</p>";
+  echo "<p>Last Name: $last_name</p>";
+  echo "<p>Email: $email</p>";
+  echo "<p>Message: $message</p>";
+  echo "<p>How did you discover us? $discovery</p>";
+  echo "<p>Rating: $rating</p>";
+}
+
+elseif ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['first_name']) && isset($_GET['last_name']) && isset($_GET['email']) && isset($_GET['message']) && isset($_GET['discovery']) && isset($_GET['rating'])) {
+  // Retrieve and process form data
+  $first_name = $_GET['first_name'];
+  $last_name = $_GET['last_name'];
+  $email = $_GET['email'];
+  $message = $_GET['message'];
+  $discovery = $_GET['discovery'];
+  $rating = $_GET['rating'];
+
+  // Display processed data
+  echo "<h3>GET Method Results</h3>";
+  echo "<section>";
+        echo "<h4>Submission completed,$first_name!</h4>";
+        echo "<p>Thanks for choosing us. </p>";
+        echo "</section>";
+        
+}
+?>
+ <h2>Everything form</h2>
+    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+        
+       
+        </select><br><br>
+  
+
     <?php
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if ($_SERVER["REQUEST_METHOD"] == "POST") 
+    {
         echo "<h2>Form Results:</h2>";
-        echo "Name: " . $_POST['name'] . "<br>";
-        echo "Email: " . $_POST['email'] . "<br>";
-        echo "Phone: " . $_POST['phone'] . "<br>";
-        echo "Date of Birth: " . $_POST['dob'] . "<br>";
-        echo "Registration Number: " . $_POST['register'] . "<br>";
-        echo "Age: " . $_POST['age'] . "<br>";
-        // Not displaying the password or secret key for security reasons
-        if (isset($_POST['terms'])) {
-            echo "Agreed to terms: Yes<br>";
-        } else {
-            echo "Agreed to terms: No<br>";
+        echo "Name: " . htmlspecialchars($_POST["name"]) . "<br>";
+        echo "Email: " . htmlspecialchars($_POST["email"]) . "<br>";
+        echo "Phone: " . htmlspecialchars($_POST["phone"]) . "<br>";
+        echo "Description: " . htmlspecialchars($_POST["description"]) . "<br>";
+        }
+        // Process image upload if needed
+        if (isset($_FILES['image']) && $_FILES['image']['error'] === UPLOAD_ERR_OK) 
+        {
+            $tmp_name = $_FILES['image']['tmp_name'];
+            $name = basename($_FILES['image']['name']);
+            move_uploaded_file($tmp_name, "uploads/$name");
+            echo "Image uploaded successfully.";
         }
     }
     ?>
-
-                <!-- Form 2 - GET -->
-                <form class="form2" action='' method="GET">
-                    <h3>GET Form</h3>
-                    <label for="firstName2">First name:</label><br>
-                    <input type="text" id="firstName2" name="firstName2" required><br>
-                    <label for="lastName2">Last name:</label><br>
-                    <input type="text" id="lastName2" name="lastName2" required><br>
-                    <label for="email2">Email:</label><br>
-                    <input type="email" id="email2" name="email2" required><br>
-                    <label for="birthday2">Birthday:</label><br>
-                    <input type="date" id="birthday2" name="birthday2"><br>
-                    <input type='hidden' name='p' id='p' value='forms'/>
-                    <input id="submitButton" type="submit" value="Submit GET Form">
-                </form>
-                <hr/>
-
-                <?php
-                if ($_SERVER["REQUEST_METHOD"] == "GET") {
-                    if (isset($_GET['firstName2'])) {
-                        $firstName = $_GET['firstName2'];
-                        $lastName = $_GET['lastName2'];
-                        $email = $_GET['email2'];
-                        $birthday = $_GET['birthday2'];
-                        echo "<h3>Submission Successful!</h3>";
-                        echo "Thank you for visiting our site $firstName!<br>";
-                        echo "Check your inbox for more information at $email <br>";
-                       }
-                }
-                ?>
-
-                <!-- Form 3 - POST -->
-                <form class="form3" action='' method="POST" enctype="multipart/form-data">
-                    <h3>Everything Form</h3>
-                    <label for="firstName3">First name:</label><br>
-                    <input type="text" id="firstName3" name="firstName3" required><br>
-                    <label for="lastName3">Last name:</label><br>
-                    <input type="text" id="lastName3" name="lastName3" required><br>
-                    <label for="email3">Email:</label><br>
-                    <input type="email3" id="email" name="email3" required><br>
-                    <label for="phoneNumber">Phone Number:</label><br>
-                    <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="###-###-####" required><br>
-                    <label for="birthday3">Birthday:</label><br>
-                    <input type="date" id="birthday3" name="birthday3"><br>
-                    <label>Gender:</label><br>
-                    <input style="margin-right: 1vh; margin-top: 1vh;" type="radio" id="male" name="gender" value="male">Male</input><br>
-                    <input style="margin-right: 1vh; margin-bottom: 1vh;" type="radio" id="female" name="gender" value="female">Female</input><br>
-                  <input id="submitButton" type="submit" value="Submit Everything Form">
-                </form>
-                  
-                <?php
-                if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                    if (isset($_POST['firstName3'])) {
-                        $firstName = $_POST['firstName3'];
-                        $lastName = $_POST['lastName3'];
-                        $email = $_POST['email3'];
-                        $phoneNumber = $_POST['phoneNumber']; // Added phone number field
-                        $birthday = $_POST['birthday3'];
-                        $gender = isset($_POST['gender']) ? $_POST['gender'] : ''; // Handling gender input
-                        
-                        }
-
-                        if ($gender === 'male') {
-                        $genderOutput = 'Male';
-                        } elseif ($gender === 'female') {
-                            $genderOutput = 'Female';
-                        } else {
-                            $genderOutput = '';
-                        }
-                      
-                        $file = isset($_FILES['file']) ? $_FILES['file'] : null;
-                        $fileName = ($file && $file['error'] === UPLOAD_ERR_OK) ? $file['name'] : 'None';
-                        $languagesOutput = !empty($languages) ? implode(", ", $languages) : "None";
-                        echo "<hr style=\"margin-bottom: 2.5vh;\"/>";
-                        echo "<h2 class=\"everythingH2\">Everything Form Results:</h2>";
-                        echo "First Name: $firstName <br>";
-                        echo "Last Name: $lastName <br>";
-                        echo "Email: $email <br>";
-                        echo "Phone Number: $phoneNumber <br>"; 
-                        echo "Birthday: $birthday <br>";
-                        echo "Gender: $genderOutput <br>";
-                        echo "File: $fileName <br>"; 
-                    }
-                }
-
-                ?>
-            </div>
-        </main>
-    </body>
-</html>
+    
