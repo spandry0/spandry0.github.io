@@ -123,3 +123,28 @@ p {
         .login-container input[type="submit"]:hover {
             background-color: #665544;
         }
+}
+
+nav ul li a:hover {
+    color:#f0ece2;
+}
+
+footer {
+	text-align: center;
+	margin: auto;
+}
+
+.validation-buttons {
+    position: absolute;
+    top: 10px;
+}
+    img {
+    max-width: 100px; 
+    height: auto;
+}
+ header {
+  text-align: center;
+}
+
+main {
+  background-color: #dfd3c3;
