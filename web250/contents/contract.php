@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang = "en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="stylesheet" type="text/css" href="styles/default.css">
-    <title>Stephane Pandry's Small penguin | WEB250</title>
-    <link rel="stylesheet" href="styles/contract.css">
-</head>
- <body>
+<h1><h1>Contract</h1></h1>
 <main class="introMain">
               <h2>Contract</h2>
         <p>
