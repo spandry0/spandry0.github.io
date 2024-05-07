@@ -1,14 +1,10 @@
-<h1><h1>  Introduction</h1></h1>
-    <nav>
-            <ul class="nav-links">
-            </ul>
-    </nav>
+ <h2>Introduction</h2>
           <div class="introImage">
                   <img src="images/Pandry.jpeg" alt="Pandry" width="300" height="400">
 		
-          </div>
+   
+         </div>
            <main class="introMain">
-              <h2>Introduction</h2>
         <div class="introList">
             <ul>
                 <li><b>Personal Background:</b> I grew up in Ivory Coast (West Africa). I have lived in the US for 7 years. I got my high school diploma and I graduated in electromechanical engineering in Ivory Coast. My first language is French and I learned English at CPCC.</li>
@@ -23,15 +19,4 @@
                 <li><b>Funny/Interesting Item to Remember me by</b>: People seeing me think that I am mean but they notice that they are wrong when they speak to me.!</li> 
                 <li><b>I'd also like to share </b>: I enjoy spending time outside with my son walking, playing, and any number of other activities that keep him off the screens.</li>
             </ul>
-        </div>
-        </main>
-    
-        <div class="nav-links">
-            <nav>
-            </nav>
-            <br>
-         <div class="designedBy">
-         </div>
-         <div class="validationButtons">
-        </div>
-
+      
