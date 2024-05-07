@@ -12,7 +12,7 @@
             border: 1px solid #ccc;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            background-color: #f9f9f9;
+            background-color: #665544; 
         }
         .business-card h2 {
             margin-bottom: 10px;
@@ -26,7 +26,7 @@
 
 <?php
 $name = "Stephane Pandry";
-$title = "Data Consulting";
+$title = "Data business intelligente Student";
 $email = "spandry0@gmail.com";
 $phone = "888-456-7890";
 ?>
