@@ -16,9 +16,11 @@
         <li><a href="contract.php">Contract</a></li><li><a href="brand.html">Brand</a></li>
 	<li><a href="forms.php">Forms</a></li>
         <li><a href="FizzBuzzBang.php">FizzBuzz</a></li>
+	<li><a href="login.php">Login</a></li
        
     </ul>
 </nav>
+	</header>
 
 <h2>FizzBuzzBang</h2>
 
