@@ -3,12 +3,12 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" type="text/css" href="styles/default.css">
-    <title>Stephane Pandry's Small Penguin | WEB250 | Course Contract</title>
+    <title>Stephane Pandry's Small Penguin | WEB250 | fizzbuzzbang</title>
 </head>
 <body>
 <header>
     <h1>Stephane Pandry's Small Penguin | WEB250 </h1>
-</header>
+
 <nav>
     <ul class="nav-links">
         <li><a href="index.php">Home</a></li>
