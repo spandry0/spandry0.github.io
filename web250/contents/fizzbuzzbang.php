@@ -1,30 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="stylesheet" type="text/css" href="styles/default.css">
-    <title>Stephane Pandry's Small Penguin | WEB250 | fizzbuzzbang</title>
-</head>
-<body>
-<header>
-    <h1>Stephane Pandry's Small Penguin | WEB250 </h1>
-
-<nav>
-    <ul class="nav-links">
-        <li><a href="index.php">Home</a></li>
-        <li><a href="introduction.php">Introduction</a></li>
-        <li><a href="contract.php">Contract</a></li><li><a href="brand.html">Brand</a></li>
-	<li><a href="forms.php">Forms</a></li>
-        <li><a href="FizzBuzzBang.php">FizzBuzz</a></li>
-	<li><a href="login.php">Login</a></li
-       
-    </ul>
-</nav>
-	</header>
-
-<h2>FizzBuzzBang</h2>
-
-  <?php
+<?php
     // Initialize variables with default values
     $name = "Stephane";
     $start_num = "";
@@ -101,7 +75,6 @@
             <a href="https://www.linkedin.com/in/stephane-pandry-3b811a205/">LinkedIn </a>
         </nav>
         <br>
-        <div class="designedBy">
          
         </div>
         <div class="validationButtons">
