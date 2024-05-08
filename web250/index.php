@@ -22,7 +22,6 @@ if (isset($_SESSION['username'])) {
                <h1>Stephane Pandry's Small Penguin | WEB250 |</h1>
          </header>
     <nav>
-          <nav>
     <ul class="nav-links">
         <li><a href="index.php">Home</a></li>
         <li><a href="introduction.php">Introduction</a></li>
@@ -73,7 +72,6 @@ if (isset($_SESSION['username'])) {
             <a href="https://www.linkedin.com/in/stephane-pandry-3b811a205/">LinkedIn </a>
         </nav>
         <br>
-        <div class="designedBy">
          
         </div>
         <div class="validationButtons">
@@ -86,6 +84,5 @@ if (isset($_SESSION['username'])) {
         </div>
     </div>
 </footer>
-
 </body>
 </html>
