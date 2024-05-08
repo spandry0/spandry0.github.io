@@ -20,7 +20,7 @@ if (isset($_SESSION['username'])) {
 	
          <header>
                <h1>Stephane Pandry's Small Penguin | WEB250 |</h1>
-         </header>
+         
     <nav>
     <ul class="nav-links">
         <li><a href="index.php">Home</a></li>
@@ -29,8 +29,10 @@ if (isset($_SESSION['username'])) {
         <li><a href="brand.php">Brand</a></li>
         <li><a href="forms.php">Forms</a></li>
         <li><a href="FizzBuzzBang.php">FizzBuzz</a></li>
+	<li><a href="login.php">Login</a></li>
     </ul>
 </nav>
+</header>
 	
 
 <main>
